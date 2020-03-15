@@ -20,6 +20,9 @@
     T1Array*task2 = [[T1Array alloc] init];
     NSLog(@"%@",[task2 convertToHappy:(@[@1, @2, @33, @44, @4, @22, @3])]);
     
+    //    BillCounter*task3 = [[BillCounter alloc] init];
+    //    NSLog(@"%@",[task3 compareResultForBill:(@[@2, @4, @6, @8]) notIncludingElementWithIndex:@2 withGivenSum:@7]);
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window setRootViewController: [UIViewController new]];
     self.window.backgroundColor = [UIColor whiteColor];
