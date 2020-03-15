@@ -1,4 +1,9 @@
 #import "AppDelegate.h"
+#import "MiniMaxArrayConverter.h"
+#import "T1Array.h"
+#import "BillCounter.h"
+#import "Parser.h"
+#import "PalindromeSolver.h"
 
 @interface AppDelegate ()
 
@@ -8,6 +13,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //task1
+    MiniMaxArrayConverter*task1 =[[MiniMaxArrayConverter alloc] init];
+    NSLog(@"%@",[task1 convertFromArray:(@[@1, @2, @33, @44, @4, @22, @3])]);
+    //task2
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window setRootViewController: [UIViewController new]];
     self.window.backgroundColor = [UIColor whiteColor];
